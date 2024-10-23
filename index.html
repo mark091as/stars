@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع ترتيب المهام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="date-time"></h1>
+            <div class="language-switch">
+                <button onclick="changeLanguage('ar')">عربي</button>
+                <button onclick="changeLanguage('en')">English</button>
+                <button onclick="changeLanguage('fr')">Français</button>
+                <button onclick="changeLanguage('es')">Español</button>
+            </div>
+        </header>
+        <main>
+            <h2 class="storka">storka</h2>
+            <input type="text" id="taskInput" placeholder="أضف مهمة جديدة">
+            <button class="add-btn" onclick="addTask()">إضافة</button>
+            <ul id="taskList"></ul>
+        </main>
+        <footer>
+            <p>جميع الحقوق محفوظة لدى storka</p>
+            <p class="small">(mark johnson)</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
